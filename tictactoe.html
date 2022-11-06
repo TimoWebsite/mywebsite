@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyScripts</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/63be65c8f9.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Nav-Section -->
+    <nav class="navbar">
+    <div class="navbar__container">
+        <a href="/" id="navbar__logo"><i class="fas fa-gem"></i> MyScripts</a>
+        <div class="navbar__toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+            <li class="navbar__item">
+                <a href="/" class="navbar__links"> Home </a>
+            </li>
+            <li class="navbar__item">
+                <a href="/tech.html" class="navbar__links"> Test Scripts </a>
+            </li>
+            <li class="navbar__item">
+                <a href="/" class="navbar__links"> View Scripts </a>
+            </li>
+        </ul>
+    </div>   	
+    </nav>
+<!-- 2 Sektion -->
+
+</div>
+<!-- 2 Sektion -->
+<div class="services">
+    <h1>Code:</h1>
+    <p>See my Code <br>
+            #finished project 13.10.22<br>
+    import random<br>
+    board = [' ' for x in range(10)]<br>
+    def printBoard(board): <br>
+        print(' ' + board[1] + ' | ' + board[2] + ' | ' + board[3])<br>
+        print("-----------")<br>
+        print(' ' + board[4] + ' | ' + board[5] + ' | ' + board[6])<br>
+        print("-----------")<br>
+        print(' ' + board[7] + ' | ' + board[8] + ' | ' + board[9])<br>
+        <br>
+    def isFree(pos):<br>
+        if board[pos] == ' ':<br>
+            return True<br>
+        else:<br>
+            return False<br>
+    def setLetter(pos,Letter):<br>
+        board[pos] = Letter<br>
+    def isFull(board):<br>
+
+        if board.count(' ') <  1 :<br>
+            return True<br>
+        else:<br>
+            return False<br>
+    def isWinner(bo,le):<br>
+        return  (bo[1] == le and bo[2] == le and bo[3] == le) or (bo[4] == le and bo[5] == le and bo[6] == le) or (bo[7] == le and bo[8] == le and bo[9] == le) or (bo[1] == le and bo[4] == le and bo[7] == le) or (bo[2] == le and bo[5] == le and bo[8] == le) or (bo[3] == le and bo[6] == le and bo[9] == le) or (bo[1] == le and bo[5] == le and bo[9] == le) or (bo[3] == le and bo[5] == le and bo[7] == le) <br>
+
+    def computerMove():<br>
+        if not isFull(board):<br>
+            r = random.randint(1,9)<br>
+            k = str(r)<br>
+            print(r)<br>
+            if isFree(r):<br>
+                setLetter(r,"O")<br>
+                print("Computer put an O on " + k)<br>
+            elif not isFull(board):<br>
+                    computerMove()<br>
+            else:<br>
+                print("Its a tie")<br>
+                quit()<br>
+    def checkWin(board):<br>
+        if isWinner(board,"X"):<br>
+                print("You won")<br>
+                quit()<br>
+                
+        elif isWinner(board,"O"):<br>
+                print("You Lost")<br>
+                quit()<br>
+
+
+
+
+
+
+
+
+
+    </p>
+             
+        
+</div>
+<!-- 2 Sektion -->
+<div class="footer__container">
+    <div class="footer__links">
+        <div class="footer__links--wrapper">
+            <div class="footer__links--items">
+                <h2>About me</h2>
+                <a href="/"> How it works</a>
+                <a href="/"> lorus</a>
+                <a href="/"> Howsdfjt works</a>
+                <a href="/"> Hosdkfsworks</a>
+                <a href="/"> Hosfworks</a>
+            </div>
+        </div>
+        <div class="footer__links--items">
+            <h2>About me</h2>
+            <a href="/"> How it works</a>
+            <a href="/"> lorus</a>
+            <a href="/"> Howsdfjt works</a>
+            <a href="/"> Hosdkfsworks</a>
+            <a href="/"> Hosfworks</a>
+        </div>
+        <div class="footer__links--wrapper">
+            <div class="footer__links--items">
+                <h2>About me</h2>
+                <a href="/"> How it works</a>
+                <a href="/"> lorus</a>
+                <a href="/"> Howsdfjt works</a>
+                <a href="/"> Hosdkfsworks</a>
+                <a href="/"> Hosfworks</a>
+            </div>
+        </div>
+        <div class="footer__links--items">
+            <h2>About me</h2>
+            <a href="/"> How it works</a>
+            <a href="/"> lorus</a>
+            <a href="/"> Howsdfjt works</a>
+            <a href="/"> Hosdkfsworks</a>
+            <a href="/"> Hosfworks</a>
+        </div>
+    </div>
+    <div class="social__media">
+        <div class="social__media--wrap">
+            <div class="footer__logo">
+                <a href="/" id="footer__logo"><I class="fas fa-gem"></I>MyScripts</a>
+            </div>
+            <p class="website__rights">
+                rechte
+
+            </p>
+            <div class="social__icons">
+                <a href="/" class="social__icons--link"target = "_blank">
+                    <i class="fab fa-youtube">
+
+                    </i>
+                </a>
+                <a href="/" class="social__icons--link"target = "_blank">
+                    <i class="fab fa-twitter">
+
+                    </i>
+                </a>
+                <a href="/" class="social__icons--link"target = "_blank">
+                    <i class="fab fa-facebook">
+
+                    </i>
+                </a>
+                <a href="/" class="social__icons--link"target = "_blank">
+                    <i class="fab fa-instagram">
+                    </i>
+                </a>
+            </div>
+        </div>
+
+    </div>
+</div>
+ 
+    <script src="app.js"></script>
+</body>
+</html>
